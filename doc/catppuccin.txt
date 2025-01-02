@@ -679,6 +679,10 @@ nvim-cmp>lua
     cmp = true
 <
 
+copilot.vim>lua
+    copilot_vim = false,
+<
+
 nvim-dap>lua
     dap = true
 <
@@ -814,6 +818,10 @@ To use another flavour just replace `mocha` with the one you want to use.
 
 render-markdown.nvim>lua
     render_markdown = true
+<
+
+snacks.nvim>lua
+    snacks = false
 <
 
 symbols-outline.nvim
