@@ -553,6 +553,10 @@ fzf-lua>lua
     fzf = true
 <
 
+gitgraph.nvim>lua
+    gitgraph = false
+<
+
 gitsigns.nvim>lua
     gitsigns = true
 <
@@ -665,10 +669,6 @@ neotest>lua
 
 noice.nvim>lua
     noice = false
-<
-
-NormalNvim>lua
-    NormalNvim = false
 <
 
 notifier.nvim>lua
@@ -821,7 +821,10 @@ render-markdown.nvim>lua
 <
 
 snacks.nvim>lua
-    snacks = false
+    snacks = {
+        enabled = false,
+        indent_scope_color = "", -- catppuccin color (eg. `lavender`) Default: text
+    }
 <
 
 symbols-outline.nvim
