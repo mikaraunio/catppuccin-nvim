@@ -156,7 +156,7 @@
 ---@field fzf boolean?
 ---@field gitgutter boolean?
 ---@field gitgraph boolean?
----@field gitsigns boolean?
+---@field gitsigns CtpIntegrationGitsigns | boolean?
 ---@field grug_far boolean?
 ---@field harpoon boolean?
 ---@field headlines boolean?
@@ -203,6 +203,7 @@
 ---@field sandwich boolean?
 ---@field semantic_tokens boolean?
 ---@field snacks CtpIntegrationSnacks | boolean?
+---@field signify boolean?
 ---@field symbols_outline boolean?
 ---@field telekasten boolean?
 ---@field telescope CtpIntegrationTelescope | boolean?
@@ -241,6 +242,12 @@
 ---@field enabled boolean
 -- Set to true to apply color to the text in dropbar, false to only apply it to the icons.
 ---@field color_mode boolean?
+
+---@class CtpIntegrationGitsigns
+--- Whether to enable the gitsigns integration
+---@field enabled boolean
+--- Whether to enabled transparent background option
+---@field transparent boolean?
 
 ---@class CtpIntegrationIndentBlankline
 -- Whether to enable the integration.

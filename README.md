@@ -749,6 +749,18 @@ gitgraph = false
 ```lua
 gitsigns = true
 ```
+
+<details> <summary>Special</summary>
+
+```lua
+gitsigns = {
+  enabled = true,
+  -- align with the transparent_background option by default
+  transparent = false,
+}
+ ``` 
+
+</details>
 <!-- gitsigns.nvim -->
 
 <!-- grug-far.nvim -->
@@ -1573,6 +1585,20 @@ sandwich = false
 </td>
 </tr>
 <!-- vim-sandwich -->
+
+<!-- vim-signify -->
+</tr>
+<tr>
+<td> <a href="https://github.com/mhinz/vim-signify">vim-signify</a> </td>
+<td>
+
+```lua
+signify = false
+```
+
+</td>
+</tr>
+<!-- vim-signify -->
 
 <!-- vim-sneak -->
 </tr>
