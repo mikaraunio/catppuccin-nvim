@@ -306,7 +306,9 @@ beacon.nvim>lua
 <
 
 blink.cmp>lua
-    blink_cmp = false
+    blink_cmp = {
+        style = 'bordered',
+    }
 <
 
 bufferline.nvimSpecial ~
@@ -652,6 +654,10 @@ lualine.nvimSpecial ~
 
 markdown>lua
     markdown = true
+<
+
+markview.nvim>lua
+    markview = false
 <
 
 mason.nvim>lua

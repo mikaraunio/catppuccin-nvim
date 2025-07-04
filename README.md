@@ -369,7 +369,9 @@ beacon = false
 <td>
 
 ```lua
-blink_cmp = false
+blink_cmp = {
+    style = 'bordered',
+}
 ```
 
 </td>
@@ -940,6 +942,20 @@ markdown = true
 </td>
 </tr>
 <!-- markdown -->
+
+<!-- markview.nvim -->
+</tr>
+<tr>
+<td> <a href="https://github.com/OXY2DEV/markview.nvim">markview.nvim</a> </td>
+<td>
+
+```lua
+markview = false
+```
+
+</td>
+</tr>
+<!-- markview.nvim -->
 
 <!-- mason.nvim -->
 </tr>
