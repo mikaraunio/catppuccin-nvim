@@ -15,6 +15,7 @@
 ---@field compile_path string?
 -- Whether to enable transparency.
 ---@field transparent_background boolean?
+---@field float CtpFloatOpts
 -- Toggle the `~` characters after the end of buffers.
 ---@field show_end_of_buffer boolean?
 -- If true, sets terminal colors (e.g. `g:terminal_color_0`).
@@ -33,6 +34,8 @@
 ---@field styles CtpStyles?
 -- Should default integrations be used.
 ---@field default_integrations boolean?
+-- Should detect integrations automatically
+---@field auto_integrations boolean?
 -- Toggle integrations. Integrations allow Catppuccin to set the theme of various plugins.
 ---@field integrations CtpIntegrations?
 -- Catppuccin colors can be overwritten here.
@@ -49,6 +52,10 @@
 ---@field dark CtpFlavor?
 -- Catppuccin flavor to use when `:set background=light` is set.
 ---@field light CtpFlavor?
+
+---@class CtpFloatOpts
+---@field transparent boolean enable transparent floating windows
+---@field solid boolean use solid style floating windows, see |winborder|
 
 ---@class CtpDimInactive
 -- Whether to dim inactive windows.
@@ -123,6 +130,7 @@
 ---@field beacon boolean?
 ---@field blink_cmp CtpIntegrationsBlinkCmp | boolean?
 ---@field cmp boolean?
+---@field buffon boolean?
 -- `coc.nvim` links to `native_lsp` highlight groups, so you can use
 -- `native_lsp.virtual_text` and `native_lsp.underlines` to style diagnostics.
 ---@field coc_nvim boolean?
@@ -300,8 +308,6 @@
 ---@class CtpIntegrationTelescope
 -- Whether to enable the telescope integration
 ---@field enabled boolean?
--- The style of Telescope
----@field style "classic" | "nvchad" | nil
 
 ---@class CtpIntegrationIlluminate
 -- Whether to enable the vim-illuminate integration
